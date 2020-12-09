@@ -12,4 +12,4 @@ annotators in the links below:
 
 ### [Phase 1: Sentence Selection via Voting](https://stangelid.github.io/qt_annotation_phase1.html)
 ### [Phase 2: Opinion Summary Collection (General)](https://stangelid.github.io/qt_annotation_phase2_gen.html)
-### [Phase 2: Opinion Summary Collection (Aspect)](https://stangelid.github.io/qt_annotation_phase2_asp.html)
+### [Phase 3: Opinion Summary Collection (Aspect)](https://stangelid.github.io/qt_annotation_phase2_asp.html)

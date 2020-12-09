@@ -36,27 +36,42 @@ the quantized space to extract aspect-specific summaries.
 
 ### Setting up the environment
 
-* __Directory structure:__ Create the necessary directories using:
+* __Directory structure:__ Create the necessary subdirectories in the root:
 
+		cd qt
 		mkdir -p logs models outputs
 
 * __Python version:__ `python3.6`
 
 * __Dependencies:__ Use the `requirements.txt` file and conda/pip to install all necessary dependencies. E.g., for pip:
 
+		pip install -U pip
+		pip install -U setuptools
 		pip install -r requirements.txt 
 
-* __ROUGE:__ To ensure replicability and future research, we used the original ROUGE perl implementation and the `pyrouge` wrapper. Please follow the instructions [in this guide](https://poojithansl7.wordpress.com/2018/08/04/setting-up-rouge/) to setup ROUGE and `pyrouge` correctly. Make sure to you have activated your conda/virtualenv environment when installing `pyrouge` 
+* __ROUGE:__ To ensure replicability and future research, we used the original
+  ROUGE perl implementation and the `pyrouge` wrapper. Please follow the
+instructions
+[in this guide](https://poojithansl7.wordpress.com/2018/08/04/setting-up-rouge/) to
+setup ROUGE and `pyrouge` correctly. Make sure to you have activated your
+conda/virtualenv environment when installing `pyrouge` 
 
-* __SPACE training set__: The training is not included in this repo. Download SPACE via the above google drive link and copy the file `space_train.json` into the `./data/json/` directory.
+* __SPACE training set__: The training is not included in this repo. Download
+SPACE via the above google drive link and copy the file `space_train.json`
+into the `./data/json/` directory.
 
 ### Training QT
 
-To train QT on a subset of the training set using a GPU, go to the `./src` directory and run the following:
+To train QT on a subset of the training set using a GPU, go to the `./src`
+directory and run the following:
 
     python3 train.py --max_num_entities 500 --run_id run1 --gpu 0
 
-This will train a QT model with default hyperparameters (used for general summarization in the paper), store tensorboard logs under `./logs` and save a model snapshot after every epoch under `./models` (filename: `run1_<epoch>_model.pt`). Our model achieves high summarization performance, even when trained on reviews from just 500 entities, as shown here.
+This will train a QT model with default hyperparameters (for general
+summarization), store tensorboard logs under `./logs` and save a
+model snapshot after every epoch under `./models` (filename:
+`run1_<epoch>_model.pt`). Our model achieves high summarization performance,
+even when trained on reviews from just 500 entities, as shown here.
 
 For explanations of the available parameters for training the model, please see `train.py`.
 

@@ -1,6 +1,5 @@
 # Opinion Summarization with Quantized Transformers
 
-<img align="right" src="http://homepages.inf.ed.ac.uk/sangelid/qt_logo.png" style="width: 200px"/>
 This repository contains the data and code for the paper:
 
 > **Extractive Opinion Summarization in Quantized Transformer Spaces**,<br/>
@@ -25,6 +24,8 @@ SPACE contains 1,050 gold standard summaries. You can view the full instructions
 __You can download the corpus from [this google drive url](https://drive.google.com/u/0/uc?id=1C6SaRQkas2B-9MolbwZbl0fuLgqdSKDT&export=download)__.
 
 ## The Quantized Transformer
+
+<img align="right" src="http://homepages.inf.ed.ac.uk/sangelid/qt_logo.png" style="width: 200px"/>
 
 The Quantized Transformer (QT) is inspired by Vector-Quantized Variational
 Autoencoders, which we repurpose for popularity-driven summarization. It uses a

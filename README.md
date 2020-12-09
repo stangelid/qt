@@ -10,13 +10,12 @@ This repo contains the data and code for the paper:
 ## The SPACE corpus
 
 The paper introduces SPACE, a large-scale opinion summarization benchmark for
-the evaluation of unsupervised summarizers.
-SPACE is built on TripAdvisor hotel reviews and includes a training set of
-approximately 1.1 million reviews for over 11 thousand hotels.
-For evaluation, we created a collection of human-written, abstractive opinion
-summaries for 50 hotels, including high-level general summaries and aspect
-summaries for six popular aspects: building, cleanliness, food, location, rooms,
-and service. 
+the evaluation of unsupervised summarizers.  SPACE is built on TripAdvisor
+hotel reviews and includes a training set of approximately 1.1 million reviews
+for over 11 thousand hotels.  For evaluation, we created a collection of
+human-written, abstractive opinion summaries for 50 hotels, including
+high-level general summaries and aspect summaries for six popular aspects:
+_building_, _cleanliness_, _food_, _location_, _rooms_, and _service_. 
 
 You can download the corpus from [this google drive url](https://drive.google.com/u/0/uc?id=1C6SaRQkas2B-9MolbwZbl0fuLgqdSKDT&export=download).
 

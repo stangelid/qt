@@ -58,6 +58,8 @@ To train QT on a subset of the training set using a GPU, go to the `./src` direc
 
 This will train a QT model with default hyperparameters (used for general summarization in the paper), store tensorboard logs under `./logs` and save a model snapshot after every epoch under `./models` (filename: `run1_<epoch>_model.pt`). Our model achieves high summarization performance, even when trained on reviews from just 500 entities, as shown here.
 
+For explanations of the available parameters for training the model, please see `train.py`.
+
 ### Summarization with QT
 
 To perform general opinion summarization with a trained QT model, go to the `./src` directory and run the following:
@@ -69,6 +71,8 @@ This will store the summaries under `./outputs/general_run1` and also the output
 For aspect opinion summarization, run:
 
 	python3 aspect_extract.py --model ../models/run1_20_model.pt --run_id aspects_run1 --gpu 0
+	
+Outputs stored similarly to the general opinion summarization example. For explanations of the available parameters for summarizing with the model, please see `extract.py` and `aspect_extract.py`.
 
 ### Using QT on a new dataset
 

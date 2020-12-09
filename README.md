@@ -1,8 +1,7 @@
 # Opinion Summarization with Quantized Transformers
 
-This repository contains the data and code for the paper:
-
 <img align="right" src="http://homepages.inf.ed.ac.uk/sangelid/qt_logo.png"/>
+This repository contains the data and code for the paper:
 
 > **Extractive Opinion Summarization in Quantized Transformer Spaces**,<br/>
 > Stefanos Angelidis, Reinald Kim Amplayo, Yoshihiko Suhara, Xiaolan Wang, Mirella Lapata, <br/>

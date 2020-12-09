@@ -1,6 +1,6 @@
 # Opinion Summarization with Quantized Transformers
 
-<img align="right" src="http://homepages.inf.ed.ac.uk/sangelid/qt_logo.png"/>
+<img align="right" src="http://homepages.inf.ed.ac.uk/sangelid/qt_logo.png" style="width: 200px"/>
 This repository contains the data and code for the paper:
 
 > **Extractive Opinion Summarization in Quantized Transformer Spaces**,<br/>

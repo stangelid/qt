@@ -3,13 +3,10 @@ import os.path
 import json
 import argparse
 from random import seed
-from tqdm import tqdm
 from time import time
 import math
 
-from sumeval.metrics.rouge import RougeCalculator
-from sumeval.metrics.bleu import BLEUCalculator
-from scipy.cluster.vq import kmeans, vq
+from scipy.cluster.vq import kmeans
 
 import torch
 import torch.nn as nn

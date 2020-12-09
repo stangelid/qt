@@ -4,21 +4,14 @@ import os.path
 import json
 import argparse
 from random import seed
-from tqdm import tqdm
 from time import time
 import math
 
-from scipy.cluster.vq import kmeans, vq
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 import torch
-import torch.nn as nn
-import torch.nn.functional as F
-import torch.optim as optim
-from torch.optim.lr_scheduler import StepLR
 from torch.utils.data import DataLoader
 from torch.distributions.multinomial import Multinomial
-import torch.utils.tensorboard as tb
 
 from encoders import *
 from quantizers import *

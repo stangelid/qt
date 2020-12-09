@@ -6,24 +6,17 @@ import re
 import argparse
 from collections import defaultdict
 from random import seed
-from tqdm import tqdm
 from time import time
 import math
 
-from nltk.tokenize import sent_tokenize
 from nltk.corpus import stopwords
 from nltk.stem.wordnet import WordNetLemmatizer
 
-from scipy.cluster.vq import kmeans, vq
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 import torch
-import torch.nn as nn
-import torch.nn.functional as F
-import torch.optim as optim
-from torch.optim.lr_scheduler import StepLR
 from torch.utils.data import DataLoader
-import torch.utils.tensorboard as tb
+from torch.distributions.multinomial import Multinomial
 
 from encoders import *
 from quantizers import *

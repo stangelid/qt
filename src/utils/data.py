@@ -7,11 +7,9 @@ from tqdm import tqdm
 from time import time
 
 import torch
-import torch.nn as nn
-import torch.multiprocessing
-from torch.utils.data import Dataset, Sampler, get_worker_info
+from torch.utils.data import Dataset, Sampler
+
 import numpy as np
-import spacy
 import sentencepiece as spm
 
 

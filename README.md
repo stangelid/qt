@@ -33,10 +33,40 @@ the quantized space to extract aspect-specific summaries.
 
 ### Setting up the environment
 
+* __Directory structure:__ Create the necessary directories using:
+
+		mkdir -p logs models outputs
+
 * __Python version:__ `python3.6`
 
 * __Dependencies:__ Use the `requirements.txt` file and conda/pip to install all necessary dependencies. E.g., for pip:
 
 		> pip install -r requirements.txt 
 
+* __ROUGE:__ To ensure replicability and future research, we used the original ROUGE perl implementation and the `pyrouge` wrapper. Please follow the instructions [in this guide](https://poojithansl7.wordpress.com/2018/08/04/setting-up-rouge/) to setup ROUGE and `pyrouge` correctly. Make sure to you have activated your conda/virtualenv environment when installing `pyrouge` 
 
+* __SPACE training set__: The training is not included in this repo. Download SPACE via the google drive link above and copy the file `space_train.json` to the `./data/json/` directory.
+
+### Training QT
+
+To train QT on a subset of the training set using a GPU, go to the `./src` directory and run the following:
+
+    python3 train.py --max_num_entities 500 --run_id run1 --gpu 0
+
+This will run the QT model with default hyperparameters (used for general summarization in the paper), store tensorboard logs under `./logs` and save a model snapshot after every epoch under `./models` (filename: `run1_<epoch>_model.pt`).
+
+### Summarization with QT
+
+To perform general opinion summarization with a trained QT model, go to the `./src` directory and run the following:
+
+	python3 extract.py --model ../models/run1_20_model.pt --run_id general_run1 --gpu 0
+
+This will store the summaries under `./outputs/general_run1` and also the output of ROUGE evaluation in `./outputs/eval_general_run1.json`.
+
+For aspect opinion summarization, run:
+
+	python3 aspect_extract.py --model ../models/run1_20_model.pt --run_id aspects_run1 --gpu 0
+
+### Using QT on a new dataset
+
+_Instructions coming soon_ :)

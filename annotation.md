@@ -10,4 +10,4 @@ Its annotation was a multi-stage effort involving expert native
 English-speaking annotators. You can access the exact instructions given to the
 annotators in the links below:
 
-## [Phase 1: Sentence Selection via Voting](file:///disk/scratch/sangelid/repositories/stangelid.github.io/qt_annotation_phase1.html)
+[__Phase 1: Sentence Selection via Voting__](file:///disk/scratch/sangelid/repositories/stangelid.github.io/qt_annotation_phase1.html)

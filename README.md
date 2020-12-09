@@ -7,7 +7,7 @@ This repository contains the data and code for the paper:
 > _To appear: In Transactions of the Association for Computational Linguistics (TACL)_.<br/>
 > [arXiv](https://arxiv.org/abs/2012.04443)
 
-![qt_logo](http://homepages.inf.ed.ac.uk/sangelid/qt_logo.png "Logo Title Text 1"){:style="float: right;margin-right: 7px;margin-top: 7px;"}
+<img align="right" src="http://homepages.inf.ed.ac.uk/sangelid/qt_logo.png"/>
 
 ## The SPACE corpus
 

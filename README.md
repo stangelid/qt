@@ -11,10 +11,8 @@ This repo contains the data and code for the paper:
 
 The paper introduces SPACE, a large-scale opinion summarization benchmark for
 the evaluation of unsupervised summarizers.
-
 SPACE is built on TripAdvisor hotel reviews and includes a training set of
 approximately 1.1 million reviews for over 11 thousand hotels.
-
 For evaluation, we created a collection of human-written, abstractive opinion
 summaries for 50 hotels, including high-level general summaries and aspect
 summaries for six popular aspects: building, cleanliness, food, location, rooms,

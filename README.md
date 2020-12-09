@@ -1,6 +1,6 @@
 # Opinion Summarization with Quantized Transformers
 
-This repo contains the data and code for the paper:
+This repository contains the data and code for the paper:
 
 > **Extractive Opinion Summarization in Quantized Transformer Spaces**,<br/>
 > Stefanos Angelidis, Reinald Kim Amplayo, Yoshihiko Suhara, Xiaolan Wang, Mirella Lapata, <br/>
@@ -18,7 +18,7 @@ For evaluation, we created a collection of
 human-written, abstractive opinion summaries for 50 hotels, including
 high-level general summaries and aspect summaries for six popular aspects:
 _building_, _cleanliness_, _food_, _location_, _rooms_, and _service_. In total, 
-SPACE contains 1,050 gold standard summaries.
+SPACE contains 1,050 gold standard summaries. You can view the full instructions for out multi-stage annotation procedure [here](https://github.com/stangelid/qt/blob/main/annotation.md).
 
 __You can download the corpus from [this google drive url](https://drive.google.com/u/0/uc?id=1C6SaRQkas2B-9MolbwZbl0fuLgqdSKDT&export=download)__.
 

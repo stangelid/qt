@@ -21,11 +21,11 @@ high-level general summaries and aspect summaries for six popular aspects:
 _building_, _cleanliness_, _food_, _location_, _rooms_, and _service_. In total, 
 SPACE contains 1,050 gold standard summaries. You can view the full instructions for out multi-stage annotation procedure [here](https://github.com/stangelid/qt/blob/main/annotation.md).
 
-__You can download the corpus from [this google drive url](https://drive.google.com/u/0/uc?id=1C6SaRQkas2B-9MolbwZbl0fuLgqdSKDT&export=download)__.
+__Download the corpus from [this google drive url](https://drive.google.com/u/0/uc?id=1C6SaRQkas2B-9MolbwZbl0fuLgqdSKDT&export=download)__.
 
 ## The Quantized Transformer
 
-<img align="right" src="http://homepages.inf.ed.ac.uk/sangelid/qt_logo.png" style="width: 200px"/>
+<img align="right" src="http://homepages.inf.ed.ac.uk/sangelid/qt_logo.png"/>
 
 The Quantized Transformer (QT) is inspired by Vector-Quantized Variational
 Autoencoders, which we repurpose for popularity-driven summarization. It uses a

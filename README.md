@@ -44,7 +44,7 @@ the quantized space to extract aspect-specific summaries.
 
 * __Dependencies:__ Use the `requirements.txt` file and conda/pip to install all necessary dependencies. E.g., for pip:
 
-	pip install -r requirements.txt 
+		pip install -r requirements.txt 
 
 * __ROUGE:__ To ensure replicability and future research, we used the original ROUGE perl implementation and the `pyrouge` wrapper. Please follow the instructions [in this guide](https://poojithansl7.wordpress.com/2018/08/04/setting-up-rouge/) to setup ROUGE and `pyrouge` correctly. Make sure to you have activated your conda/virtualenv environment when installing `pyrouge` 
 

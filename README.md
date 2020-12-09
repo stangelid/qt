@@ -33,8 +33,10 @@ the quantized space to extract aspect-specific summaries.
 
 ### Setting up the environment
 
-__Python version:__ `python3.6`
-__Dependencies:__ Use the `requirements.txt` file and conda/pip to install all necessary dependencies. E.g., for pip:
-    > pip install -r requirements.txt 
+* __Python version:__ `python3.6`
+
+* __Dependencies:__ Use the `requirements.txt` file and conda/pip to install all necessary dependencies. E.g., for pip:
+
+		> pip install -r requirements.txt 
 
 

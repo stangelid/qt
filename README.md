@@ -28,3 +28,13 @@ algorithm to discover popular opinions among hundreds of reviews, a significant
 step towards opinion summarization of practical scope. In addition, QT enables
 controllable summarization without further training, by utilizing properties of
 the quantized space to extract aspect-specific summaries.
+
+## Using our model
+
+### Setting up the environment
+
+__Python version:__ `python3.6`
+__Dependencies:__ Use the `requirements.txt` file and conda/pip to install all necessary dependencies. E.g., for pip:
+    > pip install -r requirements.txt 
+
+

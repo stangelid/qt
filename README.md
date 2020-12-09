@@ -36,11 +36,6 @@ the quantized space to extract aspect-specific summaries.
 
 ### Setting up the environment
 
-* __Directory structure:__ Create the necessary subdirectories in the root:
-
-		cd qt
-		mkdir -p logs models outputs
-
 * __Python version:__ `python3.6`
 
 * __Dependencies:__ Use the `requirements.txt` file and conda/pip to install all necessary dependencies. E.g., for pip:

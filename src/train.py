@@ -64,10 +64,10 @@ if __name__ == '__main__':
             help='feed-forward dimensionality (default: 512)',
             type=int, default=512)
     model_arg_group.add_argument('--in_pos',
-            help='not use input positional embeddings',
+            help='use input positional embeddings',
             action='store_true')
     model_arg_group.add_argument('--out_pos',
-            help='not use output positional embeddings',
+            help='use output positional embeddings',
             action='store_true')
     model_arg_group.add_argument('--dropout',
             help='transformer dropout probability (default: 0.0)',
@@ -158,7 +158,7 @@ if __name__ == '__main__':
     other_arg_group = argparser.add_argument_group('Other arguments')
     other_arg_group.add_argument('--run_id',
             help='unique run id (for logging and saved models)',
-            type=str, default='1')
+            type=str, default='run1')
     other_arg_group.add_argument('--gpu', help='gpu device to use (default: use cpu)',
             type=int, default=-1)
     other_arg_group.add_argument('--logdir',
@@ -171,8 +171,8 @@ if __name__ == '__main__':
             help='directory to put saved model snapshots (default: \'../models\')',
             type=str, default='../models')
     other_arg_group.add_argument('--save_every',
-            help='save model snapshot every N epochs (default: don\'t save)',
-            type=int, default=None)
+            help='save model snapshot every N epochs (default: save on every epoch)',
+            type=int, default=1)
     other_arg_group.add_argument('--seed',
             help='random seed',
             type=int, default=1)

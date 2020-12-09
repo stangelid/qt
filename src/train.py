@@ -84,7 +84,7 @@ if __name__ == '__main__':
             help='initial learning rate',
             type=float, default=0.001)
     train_arg_group.add_argument('--lr_decay',
-            help='learning rate decay',
+            help='learning rate decay (default: 0.9)',
             type=float, default=0.9)
     train_arg_group.add_argument('--label_smoothing',
             help='label smoothing coeff (default: 0.1)',
@@ -131,7 +131,7 @@ if __name__ == '__main__':
             help='disable transformer warmup before quantization',
             action='store_true')
     warmup_arg_group.add_argument('--warmup_epochs',
-            help='don\'t quantize at all for this many epochs',
+            help='don\'t quantize at all for this many epochs (default: 4)',
             type=int, default=4)
     warmup_arg_group.add_argument('--no_warmup_annealing',
             help='disable slow decrease of non-quantized residual coefficient',
@@ -140,7 +140,7 @@ if __name__ == '__main__':
             help='minimum residual coefficient for non-quantized path (default: 0.0)',
             type=float, default=0.0)
     warmup_arg_group.add_argument('--warmup_annealing_epochs',
-            help='non-quantized residual coefficient reduction lasts this many epochs',
+            help='non-quantized residual reduction lasts this many epochs (default: 2)',
             type=int, default=2)
 
     kmeans_arg_group = argparser.add_argument_group('K-means initialization hyperparams',

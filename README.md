@@ -20,7 +20,7 @@ high-level general summaries and aspect summaries for six popular aspects:
 _building_, _cleanliness_, _food_, _location_, _rooms_, and _service_. In total, 
 SPACE contains 1,050 gold standard summaries.
 
-You can download the corpus from [this google drive url](https://drive.google.com/u/0/uc?id=1C6SaRQkas2B-9MolbwZbl0fuLgqdSKDT&export=download).
+__You can download the corpus from [this google drive url](https://drive.google.com/u/0/uc?id=1C6SaRQkas2B-9MolbwZbl0fuLgqdSKDT&export=download)__.
 
 ## The Quantized Transformer
 
@@ -48,7 +48,7 @@ the quantized space to extract aspect-specific summaries.
 
 * __ROUGE:__ To ensure replicability and future research, we used the original ROUGE perl implementation and the `pyrouge` wrapper. Please follow the instructions [in this guide](https://poojithansl7.wordpress.com/2018/08/04/setting-up-rouge/) to setup ROUGE and `pyrouge` correctly. Make sure to you have activated your conda/virtualenv environment when installing `pyrouge` 
 
-* __SPACE training set__: The training is not included in this repo. Download SPACE via the google drive link above and copy the file `space_train.json` to the `./data/json/` directory.
+* __SPACE training set__: The training is not included in this repo. Download SPACE via the above google drive link and copy the file `space_train.json` into the `./data/json/` directory.
 
 ### Training QT
 

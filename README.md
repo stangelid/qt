@@ -9,8 +9,7 @@ This repo contains the data and code for the paper:
 
 ## The SPACE corpus
 
-The paper introduces SPACE (__S__ummaries of __P__opular and __A__spect-specific
-__C__ustomer __E__xperiences), a large-scale opinion summarization benchmark for
+The paper introduces SPACE, a large-scale opinion summarization benchmark for
 the evaluation of unsupervised summarizers.
 
 SPACE is built on TripAdvisor hotel reviews and includes a training set of

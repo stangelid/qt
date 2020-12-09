@@ -56,8 +56,8 @@ instructions
 setup ROUGE and `pyrouge` correctly. Make sure to you have activated your
 conda/virtualenv environment when installing `pyrouge` 
 
-* __SPACE training set__: The training is not included in this repo. Download
-SPACE via the above google drive link and copy the file `space_train.json`
+* __SPACE training set__: The training set is not included in this repo. Download
+SPACE via the above google drive link (405MB) and copy the file `space_train.json`
 into the `./data/json/` directory.
 
 ### Training QT

@@ -56,7 +56,7 @@ To train QT on a subset of the training set using a GPU, go to the `./src` direc
 
     python3 train.py --max_num_entities 500 --run_id run1 --gpu 0
 
-This will run the QT model with default hyperparameters (used for general summarization in the paper), store tensorboard logs under `./logs` and save a model snapshot after every epoch under `./models` (filename: `run1_<epoch>_model.pt`).
+This will train a QT model with default hyperparameters (used for general summarization in the paper), store tensorboard logs under `./logs` and save a model snapshot after every epoch under `./models` (filename: `run1_<epoch>_model.pt`). Our model achieves high summarization performance, even when trained on reviews from just 500 entities, as shown here.
 
 ### Summarization with QT
 

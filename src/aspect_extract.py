@@ -163,7 +163,7 @@ if __name__ == '__main__':
         seeds = []
         f = open(os.path.join(seeds_path, aspect + '.txt'), 'r')
         for line in f:
-            _, seed_word = line.strip()
+            _, seed_word = line.split()
             seeds.append(seed_word)
         f.close()
         aspect_seeds[aspect] = set(seeds[:args.max_num_seeds])

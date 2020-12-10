@@ -47,7 +47,8 @@ if __name__ == '__main__':
             help='maximum number of tokens per sentence (default: 40)',
             type=int, default=40)
     data_arg_group.add_argument('--split_by',
-            help='how to split summary data (use "alphanum" for SPACE)',
+            help='how to split summary data (use "alphanum" for SPACE, ' + \
+                 '"presplit" or "original" otherwise)',
             type=str, default='alphanum')
 
     summ_arg_group = argparser.add_argument_group('Summarizer arguments')

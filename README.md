@@ -95,5 +95,4 @@ Outputs stored similarly to the general opinion summarization example. For expla
 ### Using QT on a custom corpus
 
 If you want to use QT with a summarization corpus other than SPACE, please
-follow (the instruction on this
-page)[https://github.com/stangelid/qt/blob/main/custom.md].
+follow [the instruction on this page](https://github.com/stangelid/qt/blob/main/custom.md).

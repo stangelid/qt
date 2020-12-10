@@ -89,4 +89,34 @@ Outputs stored similarly to the general opinion summarization example. For expla
 
 ### Using QT on a new dataset
 
-_Instructions coming soon_ :)
+First, you will need to prepare your dataset according in the appropriate json
+format. Here is a how the training set should look like (no reference
+summaries):
+
+	[
+		{
+			"entity_id": "e1",
+			"reviews": [
+				{
+					"review_id": "e1_r1",
+					"rating": 3,
+					"sentences": [
+						"first sentence text",
+						"second sentence text", 
+						...
+					]
+				},
+				{
+					"review_id": "e1_r1",
+					"rating": 3,
+					"sentences": [
+						"first sentence text",
+						"second sentence text", 
+						...
+					]
+				},
+				...
+			]
+		},
+		...
+	]

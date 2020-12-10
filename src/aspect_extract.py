@@ -45,9 +45,6 @@ if __name__ == '__main__':
     argparser.add_argument('--seedsdir',
             help='directory that holds aspect query words, i.e., seeds',
             type=str, default='../data/seeds')
-    argparser.add_argument('--seeds_thres',
-            help='cumulative seed score threshold (not used)',
-            type=float, default=10.00)
     argparser.add_argument('--max_num_seeds',
             help='number of seed words per aspect',
             type=int, default=5)
@@ -163,15 +160,11 @@ if __name__ == '__main__':
     aspect_seeds = {}
     for i, aspect in enumerate(aspects):
         aspect_indices[aspect] = i
-        f = open(os.path.join(seeds_path, aspect + '.txt'), 'r')
         seeds = []
-        score_sum = 0.0
+        f = open(os.path.join(seeds_path, aspect + '.txt'), 'r')
         for line in f:
-            score, seed_word = line.split()
-            seeds.append(line.split()[1])
-            score_sum += float(score)
-            if score_sum > args.seeds_thres:
-                break
+            _, seed_word = line.strip()
+            seeds.append(seed_word)
         f.close()
         aspect_seeds[aspect] = set(seeds[:args.max_num_seeds])
 

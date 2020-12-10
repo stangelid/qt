@@ -95,19 +95,10 @@ summaries):
 
     [
       {
-        "entity_id": "e1",
+        "entity_id": "...",
         "reviews": [
           {
-            "review_id": "e1_r1",
-            "rating": 3,
-            "sentences": [
-              "first sentence text",
-              "second sentence text", 
-              ...
-            ]
-          },
-          {
-            "review_id": "e1_r1",
+            "review_id": "...",
             "rating": 3,
             "sentences": [
               "first sentence text",
@@ -120,3 +111,34 @@ summaries):
       },
       ...
     ]
+
+Gold summarization data should also include a `"summaries"` field for every
+entity:
+
+    [
+      {
+        "entity_id": "...",
+        "reviews": [
+          {
+            "review_id": "...",
+            "rating": 3,
+            "sentences": [
+              "first sentence text",
+              "second sentence text", 
+              ...
+            ]
+          },
+          ...
+        ],
+        "summaries": {
+          "aspect1": [
+            "reference summary 1 text",
+            "reference summary 2 text",
+            ...
+          ],
+          "aspect2": [...],
+        }
+      },
+      ...
+    ]
+

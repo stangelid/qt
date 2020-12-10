@@ -92,6 +92,11 @@ For aspect opinion summarization, run:
 	
 Outputs stored similarly to the general opinion summarization example. For explanations of the available parameters for summarizing with the model, please see `extract.py` and `aspect_extract.py`.
 
+### Hyperparameters used in paper
+
+Check [this page](https://github.com/stangelid/qt/blob/main/hyperparams.md) for
+details on the hyperparameters used in our paper's main experiments.
+
 ### Using QT on a custom corpus
 
 If you want to use QT with a summarization corpus other than SPACE, please

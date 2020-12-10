@@ -94,7 +94,7 @@ Outputs stored similarly to the general opinion summarization example. For expla
 
 ### Using QT on a new dataset
 
-First, you will need to prepare your dataset according in the appropriate json
+First, you will need to prepare your dataset in the appropriate json
 format. Here is a how the training set should look like (no reference
 summaries):
 
@@ -117,8 +117,8 @@ summaries):
       ...
     ]
 
-Gold summarization data should also include a `"summaries"` field for every
-entity:
+Gold summarization data should go on a separate json and also include a
+`"summaries"` field for every entity:
 
     [
       {
@@ -147,3 +147,22 @@ entity:
       ...
     ]
 
+Let's assume training and summarization data files `mydata_train.json` &
+`mydata_summ.json`
+
+Next, you need to write the reference summaries into separate files (to be used
+by ROUGE). You can use the `json-to-dirs.py` script for this:
+
+    python3 json-to-dirs.py data_summ.json mygold
+
+This will create aspect-specific subdirectories under `./mygold` and write
+summary files into them.
+
+Finally, if you intend to perform aspect summariztion, you need to specify a
+ranked list of _seed_ query words that describe every aspect. See an example
+about the location aspect of SPACE
+[here](https://github.com/stangelid/qt/blob/main/data/seeds/location.txt). The
+filename must be `<aspect>.txt as in the provided files. Use a _dummy_ seed word
+score of 1 as the first column for all seeds (we don't use the scores in the
+current model). You can specify how many seed words to use when you run the
+summarizer.

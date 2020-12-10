@@ -82,87 +82,18 @@ For explanations of the available parameters for training the model, please see 
 
 To perform general opinion summarization with a trained QT model, go to the `./src` directory and run the following:
 
-	python3 extract.py --model ../models/run1_20_model.pt --run_id general_run1 --gpu 0
+	python3 extract.py --model ../models/run1_20_model.pt --sample_sentences --run_id general_run1 --gpu 0
 
-This will store the summaries under `./outputs/general_run1` and also the output of ROUGE evaluation in `./outputs/eval_general_run1.json`.
+This will store the summaries under `./outputs/general_run1` and also the output of ROUGE evaluation in `./outputs/eval_general_run1.json`. The `--sample_sentences` flag enables 2-step sampling.
 
 For aspect opinion summarization, run:
 
-	python3 aspect_extract.py --model ../models/run1_20_model.pt --run_id aspects_run1 --gpu 0
+	python3 aspect_extract.py --model ../models/run1_20_model.pt --sample_sentences --run_id aspects_run1 --gpu 0
 	
 Outputs stored similarly to the general opinion summarization example. For explanations of the available parameters for summarizing with the model, please see `extract.py` and `aspect_extract.py`.
 
-### Using QT on a new dataset
+### Using QT on a custom corpus
 
-First, you will need to prepare your dataset in the appropriate json
-format. Here is a how the training set should look like (no reference
-summaries):
-
-    [
-      {
-        "entity_id": "...",
-        "reviews": [
-          {
-            "review_id": "...",
-            "rating": 3,
-            "sentences": [
-              "first sentence text",
-              "second sentence text", 
-              ...
-            ]
-          },
-          ...
-        ]
-      },
-      ...
-    ]
-
-Gold summarization data should go on a separate json and also include a
-`"summaries"` field for every entity:
-
-    [
-      {
-        "entity_id": "...",
-        "reviews": [
-          {
-            "review_id": "...",
-            "rating": 3,
-            "sentences": [
-              "first sentence text",
-              "second sentence text", 
-              ...
-            ]
-          },
-          ...
-        ],
-        "summaries": {
-          "aspect1": [
-            "reference summary 1 text",
-            "reference summary 2 text",
-            ...
-          ],
-          "aspect2": [...],
-        }
-      },
-      ...
-    ]
-
-Let's assume training and summarization data files `mydata_train.json` &
-`mydata_summ.json`
-
-Next, you need to write the reference summaries into separate files (to be used
-by ROUGE). You can use the `json-to-dirs.py` script for this:
-
-    python3 json-to-dirs.py data_summ.json mygold
-
-This will create aspect-specific subdirectories under `./mygold` and write
-summary files into them.
-
-Finally, if you intend to perform aspect summariztion, you need to specify a
-ranked list of _seed_ query words that describe every aspect. See an example
-about the location aspect of SPACE
-[here](https://github.com/stangelid/qt/blob/main/data/seeds/location.txt). The
-filename must be `<aspect>.txt as in the provided files. Use a _dummy_ seed word
-score of 1 as the first column for all seeds (we don't use the scores in the
-current model). You can specify how many seed words to use when you run the
-summarizer.
+If you want to use QT with a summarization corpus other than SPACE, please
+follow (the instruction on this
+page)[https://github.com/stangelid/qt/blob/main/custom.md].

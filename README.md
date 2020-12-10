@@ -8,6 +8,7 @@ This repository contains the data and code for the paper:
 > [arXiv](https://arxiv.org/abs/2012.04443)
 
 
+
 ## The SPACE corpus
 
 The paper introduces SPACE, a large-scale opinion summarization benchmark for
@@ -23,6 +24,7 @@ SPACE contains 1,050 gold standard summaries. You can view the full instructions
 
 __Download the corpus from [this google drive url](https://drive.google.com/u/0/uc?id=1C6SaRQkas2B-9MolbwZbl0fuLgqdSKDT&export=download)__.
 
+
 ## The Quantized Transformer
 
 <img align="right" src="http://homepages.inf.ed.ac.uk/sangelid/qt_logo.png"/>
@@ -34,6 +36,7 @@ algorithm to discover popular opinions among hundreds of reviews, a significant
 step towards opinion summarization of practical scope. In addition, QT enables
 controllable summarization without further training, by utilizing properties of
 the quantized space to extract aspect-specific summaries.
+
 
 ## Using our model
 
@@ -58,6 +61,7 @@ conda/virtualenv environment when installing `pyrouge`
 SPACE via the above google drive link (405MB) and copy the file `space_train.json`
 into the `./data/json/` directory.
 
+
 ### Training QT
 
 To train QT on a subset of the training set using a GPU, go to the `./src`
@@ -72,6 +76,7 @@ model snapshot after every epoch under `./models` (filename:
 even when trained on reviews from just 500 entities, as shown here.
 
 For explanations of the available parameters for training the model, please see `train.py`.
+
 
 ### Summarization with QT
 

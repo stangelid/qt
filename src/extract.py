@@ -73,7 +73,7 @@ if __name__ == '__main__':
             help='number of sentence samples per cluster sample (default: 30)',
             type=int, default=30)
     summ_arg_group.add_argument('--temp',
-            help='temperature for sampling sentences within cluster (default: 10)',
+            help='temperature for sampling sentences within cluster (default: 1)',
             type=int, default=1)
 
 

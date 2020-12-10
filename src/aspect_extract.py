@@ -73,7 +73,7 @@ if __name__ == '__main__':
             type=int, default=None)
     summ_arg_group.add_argument('--truncate_clusters',
             help='truncate cluster sampling to top-p % of clusters (if < 1) or top-k (if > 1)',
-            type=float, default=0.10)
+            type=float, default=1.0)
     summ_arg_group.add_argument('--num_cluster_samples',
             help='number of cluster samples (default: 300)',
             type=int, default=300)
@@ -88,7 +88,7 @@ if __name__ == '__main__':
             type=int, default=30)
     summ_arg_group.add_argument('--temp',
             help='temperature for sampling sentences within cluster (default: 10)',
-            type=int, default=1)
+            type=int, default=3)
 
 
     out_arg_group = argparser.add_argument_group('Output control')
@@ -102,8 +102,8 @@ if __name__ == '__main__':
             help='minimum summary sentence length in words (default: 1)',
             type=int, default=1)
     out_arg_group.add_argument('--cos_thres', 
-            help='cosine similarity threshold for extraction (default: disabled)',
-            type=float, default=-1.00)
+            help='cosine similarity threshold for extraction (default: 1.0)',
+            type=float, default=1.0)
     out_arg_group.add_argument('--no_cut_sents',
             help='don\'t cut last summary sentence',
             action='store_true')

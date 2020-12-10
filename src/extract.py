@@ -85,11 +85,11 @@ if __name__ == '__main__':
             help='summary budget in words (default: 75)',
             type=int, default=75)
     out_arg_group.add_argument('--min_tokens',
-            help='minimum summary sentence length in words (default: 1)',
-            type=int, default=1)
+            help='minimum summary sentence length in words (default: 2)',
+            type=int, default=2)
     out_arg_group.add_argument('--cos_thres', 
-            help='cosine similarity threshold for extraction (default: disabled)',
-            type=float, default=-1.00)
+            help='cosine similarity threshold for extraction (default: 0.75)',
+            type=float, default=0.75)
     out_arg_group.add_argument('--no_cut_sents',
             help='don\'t cut last summary sentence',
             action='store_true')

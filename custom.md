@@ -1,6 +1,6 @@
 # Using QT on a custom corpus
 
-## Data preparation
+### Data preparation
 
 First, you will need to prepare your dataset in the appropriate json
 format. Here is how the training set should look like (no reference
@@ -88,13 +88,13 @@ Finally, you need to train a SentencePiece tokenizer on your data using our
     python3 train-spm.py path/to/mydata_train.json myspm
     mv myspm* ../../data/sentencepiece/
 
-## Training QT
+### Training QT
 
 To train QT on your data with default hyperparameters, use the following:
 
     python3 train.py --data ../data/json/mydata_train.json --sentencepiece ../data/sentencepiece/myspm.model --run_id mydata_run1
 
-# Summarizing with QT
+### Summarizing with QT
 
 For general summarization (with 2-step sampling):
 

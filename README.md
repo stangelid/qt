@@ -33,7 +33,7 @@ Here is an example drawn from SPACE of one general and 3 aspect-specific
 summaries for the same hotel:
 
 |__Hotel Vintage Park__|
-|:----------------------------------------------|
+|-----------------------------------------------|
 |__General:__ The staff were all very friendly, helpful, and attentive. The cleanliness of the hotel was super. The rooms had a cozy elegance but garish carpets and okay beds. The Tulio restaurant was amazing, but the room service and breakfast, while prompt, were average. The hotel is within five blocks of the Pike Street Market and other upscale shopping districts.|
 |__Food:__ Hotel Vintage Park has incredibly delicious, relatively inexpensive room service and delicious coffee starting at 5:00 am. A highlight was the free evening wine tasting.|
 |__Service:__ All the professional staff was very helpful, attentive, and friendly, accommodating customers around every corner with kindness, courtesy, and pleasantry. They're also very pet friendly.|

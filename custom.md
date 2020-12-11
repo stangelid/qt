@@ -6,24 +6,26 @@ First, you will need to prepare your dataset in the appropriate json
 format. Here is how the training set should look like (no reference
 summaries):
 
-    [
+```json
+[
+  {
+    "entity_id": "...",
+    "reviews": [
       {
-        "entity_id": "...",
-        "reviews": [
-          {
-            "review_id": "...",
-            "rating": 3,
-            "sentences": [
-              "first sentence text",
-              "second sentence text", 
-              ...
-            ]
-          },
+        "review_id": "...",
+        "rating": 3,
+        "sentences": [
+          "first sentence text",
+          "second sentence text", 
           ...
         ]
       },
       ...
     ]
+  },
+  ...
+]
+```
 
 Gold summarization data should go on a separate json and also include a
 "split" (dev/test) and `"summaries"` fields for every entity. General summaries

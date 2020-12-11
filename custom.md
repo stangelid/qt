@@ -6,7 +6,7 @@ First, you will need to prepare your dataset in the appropriate json
 format. Here is how the training set should look like (no reference
 summaries):
 
-```json
+```
 [
   {
     "entity_id": "...",

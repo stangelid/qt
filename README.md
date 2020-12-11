@@ -9,7 +9,9 @@ This repository contains the data and code for the paper:
 
 
 
-## The SPACE corpus :milky_way:
+## The SPACE corpus
+
+<img align="right" src="http://homepages.inf.ed.ac.uk/sangelid/space_logo.png"/>
 
 The paper introduces SPACE, a large-scale opinion summarization benchmark for
 the evaluation of unsupervised summarizers.  SPACE is built on TripAdvisor

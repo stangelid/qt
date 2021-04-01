@@ -94,7 +94,7 @@ Finally, you need to train a SentencePiece tokenizer on your data using our
 
 To train QT on your data with default hyperparameters, use the following:
 
-    python3 train.py --data ../data/json/mydata_train.json --sentencepiece ../data/sentencepiece/myspm.model --run_id mydata_run1
+    python3 train.py --data ../data/json/mydata_train.json --sentencepiece ../data/sentencepiece/myspm.model --run_id mydata_run1 --gpu 0
 
 ### Summarizing with QT
 

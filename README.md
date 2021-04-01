@@ -67,7 +67,7 @@ the quantized space to extract aspect-specific summaries.
 * __ROUGE:__ To ensure replicability and future research, we used the original
   ROUGE perl implementation and the `pyrouge` wrapper. Please follow the
 instructions
-[in this guide](https://poojithansl7.wordpress.com/2018/08/04/setting-up-rouge/) to
+[in this guide](https://github.com/stangelid/qt/blob/main/rouge-setup.md) to
 setup ROUGE and `pyrouge` correctly. Make sure to you have activated your
 conda/virtualenv environment when installing `pyrouge` 
 

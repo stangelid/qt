@@ -1,11 +1,11 @@
-# Setting up ROUGE and pyrouge
-
 ## Installing ROUGE-1.5.5
 
-Download ROUGE-1.5.5 from [here](https://github.com/andersjo/pyrouge). You only need to take note of the ROUGE-1.5.5 directory.
+Clone the (deprecated) pyrouge from the repo below -- you just need to get ROUGE-1.5.5 from it! Place the ROUGE-1.5.5 directory anywhere in your system, and take note of its absolute path for later.
 
 ```bash
 git clone https://github.com/andersjo/pyrouge.git
+cp -r pyrouge/tools/ROUGE-1.5.5 somewhere/in/your/filesystem/
+realpath somewhere/in/your/filesystem/ROUGE-1.5.5  # this will give you the absolute path
 ```
 
 ### Check if perl is installed
@@ -31,6 +31,7 @@ cd /absolute/path/to/ROUGE-1.1.5/data/WordNet-2.0-Exceptions/
 ./buildExeptionDB.pl . exc WordNet-2.0.exc.db
 
 cd ../
+rm -f WordNet-2.0.exc.db
 ln -s WordNet-2.0-Exceptions/WordNet-2.0.exc.db WordNet-2.0.exc.db
 ```
 

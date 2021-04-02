@@ -58,6 +58,6 @@ pyrouge_set_rouge_path /absolute/path/to/ROUGE-1.5.5/
 ### Test if everything’s right
 
 ```bash
-cd pyrouge
+cd ../pyrouge
 python test.py
 ```

@@ -44,13 +44,14 @@ version from the repository:
 
 ```bash
 git clone https://github.com/bheinzerling/pyrouge.git
-cd pyrouge
 ```
 
 ### Setup
 
 ```bash
+cd pyrouge
 sudo python setup.py install
+cd bin
 pyrouge_set_rouge_path /absolute/path/to/ROUGE-1.5.5/
 ```
 
